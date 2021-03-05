@@ -1,7 +1,7 @@
 import React from "react";
 // import "./App.css";
 import CatalogContainer from "./components/Catalog";
-import Header from "./components/Header";
+import HeaderContainer from "./components/Header";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <NavBar />
       <div className="wrapperContent">
-        <Header />
+        <HeaderContainer />
         <CatalogContainer />
       </div>
     </>

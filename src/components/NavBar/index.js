@@ -41,7 +41,7 @@ const NavBar = () => {
         <div className="navBarText">Поставщики</div>
       </div>
       <div className="finance">
-        <FinanceIconSvg />
+        <FinanceIconSvg background="white" />
         <div className="navBarText">Финансы</div>
       </div>
     </div>
