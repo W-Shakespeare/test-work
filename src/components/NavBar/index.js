@@ -24,25 +24,25 @@ const NavBar = () => {
 
       <div className="order">
         <OrderIconSvg />
-        <div className="navBarText">Заказы</div>
+        <div className="navBarText orderText">Заказы</div>
       </div>
 
       <div className="usersOrder">
         <UsersOrderIconSvg />
-        <div className="navBarText">Заказы пользователей</div>
+        <div className="navBarText usersOrderText">Заказы пользователей</div>
       </div>
 
       <div className="users">
         <UsersIconSvg />
-        <div className="navBarText">Пользователи</div>
+        <div className="navBarText usersText">Пользователи</div>
       </div>
       <div className="suppliers">
         <SuppliersIconSvg />
-        <div className="navBarText">Поставщики</div>
+        <div className="navBarText suppliersText">Поставщики</div>
       </div>
       <div className="finance">
         <FinanceIconSvg background="white" />
-        <div className="navBarText">Финансы</div>
+        <div className="navBarText financeText">Финансы</div>
       </div>
     </div>
   );
