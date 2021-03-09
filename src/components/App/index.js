@@ -23,7 +23,7 @@ const AppContainer = () => {
       `resize`,
       (event) => {
         console.log(document.body.clientWidth);
-        if (document.body.clientWidth <= 572) {
+        if (document.body.clientWidth >= 572) {
           setIsActiveMenu(false);
         }
       },
