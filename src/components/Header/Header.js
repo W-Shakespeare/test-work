@@ -2,19 +2,25 @@ import React from "react";
 import { BackIconSvg, ExpandIconSvg, FinanceIconSvg } from "../Icons";
 import { CurrencyСourse } from "./CurrencyСourse";
 
-const Header = ({ userTouch, isAppearСurrencyСourse, data, loading }) => {
+const Header = ({
+  userTouch,
+  isAppearСurrencyСourse,
+  data,
+  loading,
+  isActiveMenu,
+}) => {
   return (
-    <div className="header">
+    <div className={!isActiveMenu ? "header" : "headerAppearOrDisappear"}>
       <div className="header-back">
         <BackIconSvg />
         <div className="header-backText">Назад</div>
       </div>
-      <div className="header-finance" onClick={userTouch}>
+      <div className="header-finance">
         <div className="header-finance-text">
-          <div className="text">1 265 $</div>
+          <button onClick={userTouch}>1 265 $</button>
         </div>
         <div className="header-finance-svg">
-          <FinanceIconSvg background="blue" />
+          <FinanceIconSvg background="#727478" />
         </div>
       </div>
       <CurrencyСourse
@@ -32,35 +38,6 @@ const Header = ({ userTouch, isAppearСurrencyСourse, data, loading }) => {
         </span>
         <div className="header-avatar-svg">
           <ExpandIconSvg />
-        </div>
-      </div>
-      <div className="header-menu">
-        <div className="header-menu-text">Меню</div>
-        <div className="header-menu-svg">
-          <svg
-            width="20"
-            height="19"
-            viewBox="0 0 20 19"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <line
-              x1="1.75984"
-              y1="1.29289"
-              x2="18.7598"
-              y2="18.2929"
-              stroke="#BFBFBF"
-              stroke-width="2"
-            />
-            <line
-              x1="1.24016"
-              y1="18.2929"
-              x2="18.2402"
-              y2="1.29289"
-              stroke="#BFBFBF"
-              stroke-width="2"
-            />
-          </svg>
         </div>
       </div>
     </div>

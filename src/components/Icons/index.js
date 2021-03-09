@@ -10,3 +10,5 @@ export { InfoIconSvg } from "./InfoIconSvg";
 export { ProfitabilityIconsSvg } from "./ProfitabilityIconsSvg";
 export { BackIconSvg } from "./BackIconSvg";
 export { ExpandIconSvg } from "./ExpandIconSvg";
+export { MenuIconSvgOpen } from "./MenuIconSvgOpen";
+export { MenuIconSvgClose } from "./MenuIconSvgClose";

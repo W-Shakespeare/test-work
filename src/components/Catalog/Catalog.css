@@ -1,0 +1,157 @@
+.catalog {
+  margin: 19px 29px 29px 29px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  margin: 15px;
+  width: 306px;
+  height: 409px;
+}
+
+.catalog-item img {
+  width: 306px;
+  height: 296px;
+}
+
+.catalog-item-text {
+  display: flex;
+  margin-top: 11px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.catalog-item-text-svgStar {
+  position: relative;
+  top: 22px;
+  right: 216px;
+}
+.catalog-item-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-item-footer-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.catalog-item-footer .text {
+  color: rgba(97, 105, 119, 1);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  /* line-height: 14px; */
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.catalog-item-footer-price .textPrice {
+  color: rgba(0, 91, 228, 1);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 15px; */
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.catalog-item-footer .wrapperTextandSvg {
+  display: flex;
+}
+.catalog-item-footer-profitability {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 47px;
+  width: 33%;
+  margin-top: -3px;
+  margin-right: 13px;
+}
+
+.profitability-svg {
+  display: flex;
+}
+.profitability-svg .svgDiv2,
+.svgDiv3 {
+  margin-left: 2px;
+}
+.catalog-item-footer-profitability .textPercent {
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(78, 150, 22, 1);
+  margin-left: 7px;
+}
+.catalog-item-footer-amountOrder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 47px;
+  width: 33%;
+}
+.catalog-item-footer-price {
+  height: 47px;
+  width: 33%;
+  margin-top: -3px;
+}
+.btnAmountOrder {
+  display: flex;
+  justify-content: flex-end;
+}
+.btnAmountOrder svg {
+  position: absolute;
+  margin-top: 6px;
+  margin-left: -10px;
+}
+/* .btnAmountOrder button {
+    background: #4c7eff;
+    background: #f0f3f8;
+    border-radius: 3px;
+    width: 80px;
+    height: 31px;
+  } */
+.btnAmountOrder button {
+  padding: 8px;
+  padding-right: 39px;
+  width: unset;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+  border: unset;
+  color: rgba(76, 126, 255, 1);
+  background: #ffffff;
+}
+
+.wrapperTextandSvg .svg {
+  margin-left: 7px;
+}
+
+.catalog-item-footer-amountOrder .wrapperTextandSvg {
+  display: flex;
+  justify-content: center;
+  height: 14px;
+  margin-bottom: 3px;
+}
+.wrapperContent {
+  background: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

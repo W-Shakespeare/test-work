@@ -24,8 +24,8 @@ export const FlimcorIconSvg = () => {
               y2="14.0495"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#005BE4" />
-              <stop offset="1" stop-color="#5D9BF8" />
+              <stop stopColor="#005BE4" />
+              <stop offset="1" stopColor="#5D9BF8" />
             </linearGradient>
           </defs>
         </svg>
@@ -51,8 +51,8 @@ export const FlimcorIconSvg = () => {
               y2="8.41434"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#005BE4" />
-              <stop offset="1" stop-color="#5D9BF8" />
+              <stop stopColor="#005BE4" />
+              <stop offset="1" stopColor="#5D9BF8" />
             </linearGradient>
           </defs>
         </svg>

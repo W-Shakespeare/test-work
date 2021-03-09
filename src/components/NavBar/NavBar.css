@@ -1,0 +1,141 @@
+.navBar {
+  position: relative;
+  min-width: 180px;
+  min-height: 100vh;
+  background: rgba(33, 33, 34, 1);
+}
+.flimcorLogo {
+  position: absolute;
+  margin-top: -4px;
+}
+.flimcorLogo .text {
+  font-family: Baloo;
+  color: rgba(255, 255, 255, 1);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px;
+  position: absolute;
+  top: 17px;
+  left: 54px;
+}
+
+.line1 {
+  position: absolute;
+  /* width: 24.4px;
+    height: 12.2px; */
+  left: 17px;
+  top: 16px;
+  /* background: linear-gradient(234.96deg, #005be4 29.39%, #5d9bf8 100.98%); */
+}
+.line2 {
+  position: absolute;
+  /* width: 18.83px;
+    height: 11.02px; */
+  left: 17.08px;
+  top: 22.65px;
+  z-index: 1;
+  /* background: linear-gradient(244.28deg, #005be4 33.82%, #5d9bf8 90.54%); */
+}
+.line3 {
+  /* Vector 9 */
+
+  position: absolute;
+  /* width: 20.13px;
+    height: 11.77px; */
+  left: 17.05px;
+  top: 24.73px;
+
+  /* background: #005be4;
+    transform: matrix(0, 1, 1, 0, 0, 0); */
+}
+.navBar-menu {
+  display: none;
+}
+.menuIcon {
+  display: flex;
+  position: absolute;
+  left: 14px;
+  top: 84px;
+}
+.navBarText {
+  margin-left: 14px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.order {
+  display: flex;
+  position: absolute;
+  /* width: 22px; */
+  /* height: 18px; */
+  left: 14px;
+  top: 128px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.usersOrder {
+  display: flex;
+  position: absolute;
+  left: 15px;
+  top: 171px;
+}
+.usersOrder svg {
+  transform: scale(1.1);
+}
+.usersOrderText {
+  margin-left: 15px;
+}
+.users {
+  display: flex;
+  align-items: center;
+  top: 220px;
+  left: 15px;
+  position: absolute;
+}
+.usersText {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.users-vector1 {
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  position: relative;
+}
+.users-vector2 {
+  position: relative;
+}
+.suppliers {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  top: 265px;
+  left: 14px;
+}
+.suppliers-svgDiv1 {
+  position: relative;
+  width: 16px;
+  height: 7px;
+}
+.suppliers-svgDiv2 {
+  position: relative;
+  width: 8px;
+  height: 12px;
+  top: 2px;
+}
+.suppliers-svgDiv3 {
+  position: relative;
+  width: 8px;
+  height: 12px;
+  top: -10px;
+  left: 8px;
+}
+.finance {
+  display: flex;
+  position: absolute;
+  left: 14px;
+  top: 316px;
+}

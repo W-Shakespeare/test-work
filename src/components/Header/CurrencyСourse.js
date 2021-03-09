@@ -35,7 +35,7 @@ export const CurrencyСourse = ({ isAppearСurrencyСourse, data, loading }) => 
             </div>
             {data.currencies.map((it) => {
               return (
-                <div className="items">
+                <div key={it._id} className="items">
                   <Checkbox> </Checkbox>
                   <TypeOfMoneyIconSvg type={it.badge} />
                   <div className="itemsName">{`${it.name} ${it.value}`}</div>

@@ -1,57 +1,21 @@
 import React from "react";
-import { InfoIconSvg, StarIconSvg, ProfitabilityIconsSvg } from "../Icons";
+import { StarIconSvg } from "../Icons";
+import { CatalogItemFooter } from "./CatalogItemFooter";
 
 let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const Catalog = () => {
+const Catalog = ({ isActiveMenu }) => {
   return (
-    <div className="catalog">
-      {items.map(() => {
+    <div className={!isActiveMenu ? "catalog catalogDisappear" : "catalog"}>
+      {items.map((it) => {
         return (
-          <div className="catalog-item">
-            <img
-              // src="https://www.ivi.ru/titr/uploads/2016/04/25/3eb93716942fd1f45560c7972b0ae09f.jpg/1400x0"
-              alt=""
-            />
+          <div key={it} className="catalog-item">
+            <img />
             <div className="catalog-item-text">
               Картина по номерам "Волк в облаках" 30х55 см
               <StarIconSvg />
             </div>
-            <div className="catalog-item-footer">
-              <div className="catalog-item-footer-price">
-                <div className="text">Цена за 1 шт</div>
-                <div className="textPrice">55,1$</div>
-              </div>
-              <div className="catalog-item-footer-profitability">
-                <div className="wrapperTextandSvg">
-                  <div className="text">Рентабельность</div>
-                  <InfoIconSvg />
-                </div>
-                <ProfitabilityIconsSvg />
-              </div>
-              <div className="catalog-item-footer-amountOrder">
-                <div className="wrapperTextandSvg">
-                  <div className="text">Мин</div>
-                  <InfoIconSvg />
-                </div>
-
-                <div className="btnAmountOrder">
-                  <button>x22</button>
-                  <svg
-                    width="20"
-                    height="18"
-                    viewBox="0 0 20 18"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M19.6872 3.42854C19.4189 3.09659 19.0202 2.90624 18.5933 2.90624H3.34908L3.21295 1.93062C3.11655 1.23976 2.5178 0.71875 1.82019 0.71875H0.624997C0.279842 0.71875 0 0.998592 0 1.34375C0 1.6889 0.279842 1.96874 0.624997 1.96874H1.82019C1.89769 1.96874 1.96425 2.02663 1.97491 2.10339L3.66197 14.1943C3.75838 14.8852 4.35712 15.4062 5.05474 15.4062H5.73243C5.66306 15.6018 5.62493 15.8121 5.62493 16.0312C5.62493 17.065 6.46606 17.9062 7.49992 17.9062C8.53378 17.9062 9.37491 17.065 9.37491 16.0312C9.37491 15.8121 9.33679 15.6018 9.26741 15.4062H12.6074C12.538 15.6018 12.4999 15.8121 12.4999 16.0312C12.4999 17.065 13.341 17.9062 14.3749 17.9062C15.4087 17.9062 16.2499 17.065 16.2499 16.0312C16.2499 15.8121 16.2117 15.6018 16.1424 15.4062H17.4999C17.8451 15.4062 18.1249 15.1263 18.1249 14.7812C18.1249 14.436 17.8451 14.1562 17.4999 14.1562H5.05478C4.97728 14.1562 4.91072 14.0983 4.90005 14.0215L4.74443 12.9062H17.053C17.7115 12.9062 18.2899 12.4388 18.4282 11.7945L19.9684 4.60721C20.0579 4.18998 19.9554 3.76037 19.6872 3.42854ZM8.12496 16.0312C8.12496 16.3758 7.84457 16.6562 7.49996 16.6562C7.15535 16.6562 6.87496 16.3758 6.87496 16.0312C6.87496 15.6866 7.15535 15.4062 7.49996 15.4062C7.84457 15.4062 8.12496 15.6865 8.12496 16.0312ZM14.9999 16.0312C14.9999 16.3758 14.7195 16.6562 14.3749 16.6562C14.0303 16.6562 13.7499 16.3758 13.7499 16.0312C13.7499 15.6866 14.0303 15.4062 14.3749 15.4062C14.7195 15.4062 14.9999 15.6865 14.9999 16.0312ZM18.7462 4.34518L17.206 11.5324C17.1906 11.6041 17.1263 11.6562 17.053 11.6562H4.56997L3.5235 4.15619H18.5933C18.6551 4.15619 18.6936 4.18775 18.715 4.21424C18.7364 4.24068 18.7591 4.28486 18.7462 4.34518Z"
-                      fill="#4C7EFF"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
+            <CatalogItemFooter isMobileVersion={isActiveMenu} />
           </div>
         );
       })}

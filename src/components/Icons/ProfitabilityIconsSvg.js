@@ -17,7 +17,7 @@ export const ProfitabilityIconsSvg = () => {
             x2="1.5"
             y2="14"
             stroke="#D7DFEB"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
       </div>
@@ -35,7 +35,7 @@ export const ProfitabilityIconsSvg = () => {
             x2="1.5"
             y2="10"
             stroke="#D7DFEB"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
       </div>
@@ -53,7 +53,7 @@ export const ProfitabilityIconsSvg = () => {
             x2="1.5"
             y2="6"
             stroke="#4E9616"
-            stroke-width="3"
+            strokeWidth="3"
           />
         </svg>
       </div>
