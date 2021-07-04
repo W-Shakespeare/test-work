@@ -2,7 +2,7 @@ import React from "react";
 import CatalogContainer from "../Catalog";
 import HeaderContainer from "../Header";
 import NavBar from "../NavBar";
-
+//test git
 function App({ isActiveMenu, appearOrDisappearCatalog }) {
   return (
     <>
